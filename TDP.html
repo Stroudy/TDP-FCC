@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="top-title">Coding Languages</header>
+      <ul>
+       <li><a href="#HTML" class="nav-link">HTML</a><li>
+       <li><a href="#CSS" class="nav-link">CSS</a></li>
+       <li><a href="#JavaScript" class="nav-link">JavaScript</a></li>
+       <li><a href="#Python" class="nav-link">Python</a></li>
+       <li><a href="#PHP" class="nav-link">PHP</a></li>
+       </ul>
+   </nav>
+    <main id="main-doc">
+      <section class="main-section" id="HTML">
+        <header>HTML</header>
+        <h1>What is HTML</h1>
+        <p>HTML, the backbone of web documents, shapes their content and structure. It works alongside CSS and JavaScript, facilitating webpage design and functionality. Browsers interpret HTML, transforming it into multimedia pages, initially designed to convey both structure and appearance cues.</p>
+        <p>HTML elements serve as the foundation of webpage construction, allowing the embedding of various content types. Tags denote the structural semantics of text elements, influencing the interpretation of page content. While some tags directly introduce content, others provide contextual information, guiding browsers in rendering the page.</p>
+        <p>JavaScript integration within HTML plays a pivotal role in shaping webpage behavior and content. Meanwhile, CSS dictates the visual presentation, defining the look and layout of the content. The World Wide Web Consortium (W3C), overseeing HTML and CSS standards, advocates for CSS adoption over explicit presentational HTML, emphasizing separation of structure and presentation since 1997.</p>
+        <p>HTML5, an evolved version of HTML, revolutionizes multimedia integration. It leverages elements like canvas and JavaScript to display video and audio content. This advancement signifies a paradigm shift in web development, enhancing interactivity and media integration while maintaining standards compliance with W3C recommendations.</p>
+        <h2>History</h2>
+        <p>HTML's origins trace back to physicist Tim Berners-Lee's 1980s proposal for ENQUIRE at CERN, evolving into a memo on an Internet-based hypertext system in 1989. Berners-Lee specified HTML and developed browser and server software in 1990, with early funding efforts alongside Robert Cailliau.</p>
+        <p>The first public description of HTML emerged in late 1991, detailing 18 elements influenced by SGMLguid. HTML, a markup language, orchestrates web content composition and interpretation by browsers. CSS enhances default browser-rendered characteristics, evolving from SGML-based text formatting commands used since the 1960s.</p>
+        <p>Berners-Lee viewed HTML as an SGML application, later formalized by the IETF in 1993. Drafts such as "HTML+" and "HTML 2.0" emerged, reflecting evolving web standards. The HTML Working Group, formed in 1994, eventually produced HTML 2.0, setting a standard for future implementations.</p>
+        <p>Stalled development under the IETF led to the W3C's stewardship in 1996, ensuring HTML's evolution. HTML 4.01 became an international standard in 2000. Subsequent efforts culminated in HTML5's development, addressing contemporary web needs and finalized as a joint deliverable by the WHATWG and W3C in 2014.</p>
+        <h2>HTML Summery</h2>
+        <p>HTML shapes web content with CSS and JavaScript, interpreted by browsers into multimedia pages. Elements form the foundation, guiding content interpretation. JavaScript shapes behavior, CSS defines presentation. W3C advocates CSS for separation of structure and presentation. HTML5 revolutionizes multimedia integration, advancing web standards.</p>
+        <h4>Attributes</h4>
+        <li>The <code>id</code> attribute assigns unique identifiers to HTML elements, enabling targeted style and script manipulation. When added to a page's URL, it provides global identification, facilitating direct referencing.</li>
+        <li>The <code>class</code> attribute categorizes similar elements for semantic or presentational purposes. It allows grouping and styling elements accordingly. Microformats utilize class attributes for semantic purposes. Multiple class values can be specified for an element.</li>
+        <li>The <code>style</code> attribute assigns presentational properties to an element. While using id or class attributes is preferred for stylesheet selection, the style attribute offers simplicity for specific or ad hoc styling needs.</li>
+        <li>The <code>title</code> attribute is used to attach a subtextual explanation to an element. In most browsers this attribute is displayed as a tooltip.</li>
+        <li>The <code>lang</code> attribute identifies the natural language of the element's contents, which may be different from that of the rest of the document. For example, in an English-language document:</li>
+      </section>
+      
+      <hr class="solid">
+
+      <section class="main-section" id="CSS">
+        <header>CSS</header> 
+
+        <p>CSS styles <code>HTML/XML</code> documents, separating content and presentation for improved accessibility and flexibility. It allows sharing formatting across pages, caching for faster load times, and different styling for various rendering methods. W3C maintains CSS standards, applicable to multiple markup languages.</p>
+        <p>A declaration block encloses declarations within braces, each consisting of a property, colon, and value. Properties, defined in the CSS standard, affect elements differently. Values can be keywords, numerical measurements, or color specifications, utilizing various units for precise styling.</p>
+        <p><code>CSS</code> revolutionized web design by moving presentational attributes from HTML markup to separate style sheets. This simplifies HTML, promotes consistency across devices, and enables efficient reuse of styles. CSS separates presentation from structure, enhancing maintainability and accessibility while deprecating presentational HTML markup.</p>
+        <p>CSS allows flexible styling of web content, sourced from browser defaults, user preferences, or designers. Styles can be inline, within HTML, or in external .css files, enhancing reusability, maintainability, and site performance. This separation ensures accessibility and readability, accommodating diverse user needs and devices.</p>
+        <p>CSS inheritance propagates property values from ancestors to descendants based on the document tree. Text-related properties are typically inherited, while box-related ones are not. This feature reduces redundancy in style sheets, promoting shorter CSS code. Unlike class-based inheritance in programming languages, CSS inheritance doesn't allow defining modified classes for reuse.</p>
+        <p><code>Specificity</code> in CSS measures the weight of rules, determining which styles apply when multiple rules conflict. Simple selectors have a <code>specificity</code> of 1, while class selectors are 1,0, and ID selectors are 1,0,0. Specificity values don't carry over; commas separate the "digits."</p>
+        <h2>History</h2>
+        <p><code>CSS</code>, proposed by Håkon Wium Lie in 1994 while at CERN with Tim Berners-Lee, saw influences from various style sheet languages. Discussions led to the first W3C CSS Recommendation (CSS1) in 1996, with Bert Bos's proposal playing a significant role, making him a co-creator.</p>
+        <p>CSS evolved to address the need for web style sheets, distinct from SGML. Unlike existing languages like DSSSL and FOSI, CSS allowed for cascading styles from multiple sources, meeting the demand for diverse web styling.</p>
+        <p>HTML's evolution accommodated diverse stylistic capabilities to meet developer demands, granting more design control but resulting in complex HTML. Browser variations like ViolaWWW and WorldWideWeb caused inconsistency in site appearance, limiting user control. Tim Berners-Lee's browser/editor had hardcoded style sheets, impeding web document linking. Robert Cailliau sought to separate structure from presentation for varied styling purposes</p>
+        <p>Improving web presentation sparked interest, leading to nine style sheet proposals on the www-style mailing list. Notably, "Cascading HTML Style Sheets" and "Stream-based Style Sheet Proposal" influenced CSS's development. Lie collaborated with Yves Lafon to implement CSS in Arena, while Bert Bos implemented SSP in Argo. Lie and Bos collaborated on CSS, removing the 'H' to denote applicability to various markup languages.</p> 
+        
+        <h2>CSS priority scheme (highest to lowest)</h2>
+
+        <li> Importance, The "!important" annotation overwrites the previous priority types </li>
+        <li> Inline, A style applied to an HTML element via HTML "style" attribute </li>
+        <li> Media Type, A property definition applies to all media types unless a media-specific CSS is defined </li>
+        <li> User defined, Most browsers have the accessibility feature: a user-defined CSS </li>
+        <li> Selector specificity, A specific contextual selector (#heading p) overwrites generic definition </li>
+    </section>
+      
+      <hr class="solid">
+
+      <section class="main-section" id="JavaScript">
+        <header>JavaScript</header>
+        <p><samp></samp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque, autem consequatur molestiae iste asperiores alias, quod nemo optio placeat iusto voluptatibus repudiandae. Vitae deserunt doloremque, quod aliquam eligendi rem?</p>
+        <p><kbd></kbd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quas nemo voluptatibus odit doloribus reiciendis. Fuga quis nisi, ducimus vero nihil aliquid. Reprehenderit, aliquam eum laudantium voluptatum vitae quasi illum.</p>
+        <p><code></code>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi numquam alias quibusdam reprehenderit, optio totam maxime quos est, voluptatem deleniti quo rerum quam maiores. Praesentium voluptatibus accusantium assumenda maxime aperiam.</p>
+        <p><pre></pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sapiente sunt inventore perferendis maxime, quis iusto eveniet, numquam laborum, rerum quidem corporis? Cumque doloribus corrupti, odit fugit aliquam commodi enim!</p>
+        <p><var></var>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempora dolor cum dolore iusto asperiores ipsam quisquam animi. Accusamus ab impedit magni nesciunt quasi dolore officiis eaque, ut deleniti voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia hic a quidem delectus rem voluptatum excepturi vel, magnam accusantium neque molestias repudiandae quas eligendi placeat totam perspiciatis ullam eos officiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, id voluptatum nam voluptates cupiditate eveniet quod autem eius officiis optio nisi, aperiam, cumque repellendus vero ipsum est nemo recusandae atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, ipsam hic tempore magnam sed voluptatem debitis tempora quo facere dolorem odit, id dignissimos? Debitis fugit velit omnis, excepturi quia ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam autem id rem, minus iure laborum asperiores illum quis facilis illo fugiat consectetur tenetur odit delectus aliquam! Ducimus sit repellendus eos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi optio nobis cupiditate! Nemo blanditiis distinctio sed tempora, deleniti officia doloribus id, tenetur soluta nisi aspernatur facilis sunt modi. Est, architecto.</p>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eius laborum iure ratione fugiat, iste sint labore mollitia distinctio nihil incidunt praesentium pariatur nemo reprehenderit optio reiciendis illum explicabo beatae!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio facilis ipsam provident? Autem consectetur perferendis iste assumenda quas et fugit a sunt labore? Voluptatum aut saepe magni ipsam pariatur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quibusdam vero expedita maiores eius dolores nisi totam fugit, fugiat ipsa eaque porro necessitatibus. Nobis iste voluptatum labore dolorum, dolore nulla?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium voluptatem animi debitis rerum, earum ipsum quia sit illum quisquam corporis mollitia vero, aliquam porro. Deserunt atque accusamus mollitia assumenda?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores id tenetur voluptas, distinctio libero cumque consectetur neque, ullam odit dignissimos. Deserunt laudantium ex optio laborum omnis dolorem excepturi maxime?</li>
+    </section>
+
+      <hr class="solid">
+
+      <section class="main-section" id="Python">
+        <header>Python</header>
+        <p><samp></samp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto sunt cumque, earum repudiandae odio tempore dicta voluptatem reprehenderit optio eum dolor aspernatur accusamus dolores ducimus aliquid temporibus! Impedit, quas!</p>
+        <p><kbd></kbd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos tempora ut nesciunt at non culpa inventore soluta magni incidunt! Rem quaerat id, voluptatem consectetur pariatur ullam incidunt quisquam consequatur!</p>
+        <p><code></code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iure, ipsam ex tempora eveniet id voluptas, fugit exercitationem, placeat et praesentium aspernatur reprehenderit sit sapiente recusandae obcaecati assumenda officia eligendi?</p>
+        <p><pre></pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore fugit fuga non mollitia consectetur possimus eaque, pariatur, aliquam nemo accusantium dicta, nulla reiciendis provident ex expedita enim voluptatibus porro!</p>
+        <p><var></var>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quaerat dicta, consequuntur voluptatem porro suscipit eius cupiditate unde obcaecati quasi dignissimos similique aliquid fuga necessitatibus voluptates perspiciatis. Fugit, facilis sint.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempore magni sapiente dolores tenetur quibusdam asperiores animi consectetur beatae laudantium maxime pariatur nemo voluptates voluptatibus fugit, voluptas sit officia dolorem.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, harum reiciendis impedit commodi neque corrupti, ea expedita ipsam unde doloribus quo dolorem, tempore ullam inventore. Provident modi repudiandae est consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste soluta quibusdam. Repellat adipisci, enim optio laborum facilis in! Aut error similique rem vitae nemo eveniet accusantium quisquam dolores libero.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptatem, ab error quia natus perferendis laudantium laborum amet eos nihil rem vero est obcaecati libero, voluptate iure aperiam officia quasi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minima iste eaque quam reprehenderit sunt doloremque itaque illo, dolores autem tempore odio et iusto totam rerum optio eligendi quo numquam.</p>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti blanditiis corporis delectus enim quo quibusdam at excepturi, minima ipsa velit pariatur maiores quasi expedita eos? Omnis laborum minima cumque porro.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente blanditiis odio, ipsum cupiditate quidem est tenetur. Odio quaerat laborum, aut, veniam soluta inventore voluptates delectus saepe eius est voluptate.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ad aliquid eligendi esse, reiciendis sunt culpa dolorem ut minus deserunt fugiat quo, autem molestias quos sint illo, iste maxime quaerat.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sunt possimus ratione magni et, dignissimos ab assumenda alias ex impedit autem aliquam saepe natus? Porro quidem repudiandae suscipit eum labore.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit aut porro eveniet iure unde. Porro ipsa, nulla soluta dolores excepturi delectus ut. Molestiae consequatur incidunt quidem quo vel necessitatibus!</li>
+    </section>
+
+    <hr class="solid">
+      
+      <section class="main-section" id="PHP">
+        <header>PHP</header>
+        <p><samp></samp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto sunt cumque, earum repudiandae odio tempore dicta voluptatem reprehenderit optio eum dolor aspernatur accusamus dolores ducimus aliquid temporibus! Impedit, quas!</p>
+        <p><kbd></kbd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos tempora ut nesciunt at non culpa inventore soluta magni incidunt! Rem quaerat id, voluptatem consectetur pariatur ullam incidunt quisquam consequatur!</p>
+        <p><code></code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iure, ipsam ex tempora eveniet id voluptas, fugit exercitationem, placeat et praesentium aspernatur reprehenderit sit sapiente recusandae obcaecati assumenda officia eligendi?</p>
+        <p><pre></pre>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore fugit fuga non mollitia consectetur possimus eaque, pariatur, aliquam nemo accusantium dicta, nulla reiciendis provident ex expedita enim voluptatibus porro!</p>
+        <p><var></var>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quaerat dicta, consequuntur voluptatem porro suscipit eius cupiditate unde obcaecati quasi dignissimos similique aliquid fuga necessitatibus voluptates perspiciatis. Fugit, facilis sint.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempore magni sapiente dolores tenetur quibusdam asperiores animi consectetur beatae laudantium maxime pariatur nemo voluptates voluptatibus fugit, voluptas sit officia dolorem.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, harum reiciendis impedit commodi neque corrupti, ea expedita ipsam unde doloribus quo dolorem, tempore ullam inventore. Provident modi repudiandae est consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste soluta quibusdam. Repellat adipisci, enim optio laborum facilis in! Aut error similique rem vitae nemo eveniet accusantium quisquam dolores libero.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptatem, ab error quia natus perferendis laudantium laborum amet eos nihil rem vero est obcaecati libero, voluptate iure aperiam officia quasi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minima iste eaque quam reprehenderit sunt doloremque itaque illo, dolores autem tempore odio et iusto totam rerum optio eligendi quo numquam.</p>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti blanditiis corporis delectus enim quo quibusdam at excepturi, minima ipsa velit pariatur maiores quasi expedita eos? Omnis laborum minima cumque porro.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente blanditiis odio, ipsum cupiditate quidem est tenetur. Odio quaerat laborum, aut, veniam soluta inventore voluptates delectus saepe eius est voluptate.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ad aliquid eligendi esse, reiciendis sunt culpa dolorem ut minus deserunt fugiat quo, autem molestias quos sint illo, iste maxime quaerat.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sunt possimus ratione magni et, dignissimos ab assumenda alias ex impedit autem aliquam saepe natus? Porro quidem repudiandae suscipit eum labore.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit aut porro eveniet iure unde. Porro ipsa, nulla soluta dolores excepturi delectus ut. Molestiae consequatur incidunt quidem quo vel necessitatibus!</li>
+      </section>
+      
+    </main>
+  </body>
+</html>
